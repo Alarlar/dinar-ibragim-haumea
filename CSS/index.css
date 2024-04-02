@@ -1,0 +1,55 @@
+
+/* Basic styles */
+
+body {
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    background-color: #f0f0f0; 
+  }
+
+  /* Header styles */
+
+  .name {
+    font-size: 2.5em; 
+    margin-bottom: 1em; 
+    text-align: center; 
+  }
+
+  /* Section styles */
+
+section {
+    padding: 1em 2em; 
+    margin-bottom: 2em; 
+  }
+
+  /* Experience list styles */
+
+.experience-list {
+    list-style: none; 
+    padding: 0; 
+  }
+
+  .experience-list li {
+    margin-bottom: 0.5em; 
+  }
+
+/* Connect list styles */
+
+.connect-list {
+    list-style: none; 
+    padding: 0; 
+  }
+  
+  .connect-list li {
+    margin-bottom: 0.5em; 
+  }
+
+  /* Link styles */
+a {
+    color: #333; 
+    text-decoration: none; 
+  }
+  
+  a:hover {
+    color: #999; 
+  }
