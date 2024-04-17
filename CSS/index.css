@@ -71,3 +71,48 @@ a {
 a:hover {
   color: #999;
 }
+
+/* Media Queries for Tablets and Desktops */
+
+@media (min-width: 768px) {
+  /* Tablet Styles */
+
+  .name {
+    font-size: 3em;
+    margin-bottom: 1.5em;
+  }
+
+  section {
+    padding: 2em;
+  }
+
+  .experience-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .experience-item {
+    flex: 1 0 45%;
+    margin: 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  /* Desktop Styles */
+
+  .name {
+    font-size: 3.5em;
+  }
+
+  section {
+    padding: 3em;
+  }
+
+  .experience-container {
+    justify-content: space-around;
+  }
+
+  .experience-item {
+    flex: 1 0 30%;
+  }
+}
