@@ -1,20 +1,22 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  background-color: #f0f0f0;
+  margin: 20px 0;
+  background-color: #dfd2d2;
 }
 
-.name {
-  font-size: 2.5em;
-  margin-bottom: 1em;
+#name {
+  font-size: 3em;
+  margin-bottom: 0.6em;
   text-align: center;
+  margin-top: 50px;  
 }
 
+/*
 section {
   padding: 1em 2em;
   margin-bottom: 2em;
 }
-
+*/
 
 nav {
   position: fixed;
@@ -26,7 +28,7 @@ nav {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   z-index: 10; 
 }
-
+/*
 nav a {
   text-decoration: none;
   margin-right: 20px;
@@ -37,32 +39,33 @@ nav a {
 nav a:hover {
   color: #999;
 }
+*/
 
-
-.experience-container {
+#Experience {
   display: flex; 
   flex-wrap: wrap; 
   gap: 20px; 
 }
-
+/*
 .experience-item {
   background-color: #fff;
   padding: 15px;
   border-radius: 5px;
   flex: 1 0 30%; 
 }
-
+*/
+*/
 .experience-item h3 {
   margin-bottom: 5px;
 }
-
-
+*/
+/*
 .connect-list {
   display: flex;
   justify-content: space-between; 
   align-items: center; 
 }
-
+*/
 a {
   color: #333;
   text-decoration: none;
@@ -78,7 +81,7 @@ a:hover {
   /* Tablet Styles */
 
   .name {
-    font-size: 3em;
+    font-size: 30em;
     margin-bottom: 1.5em;
   }
 
