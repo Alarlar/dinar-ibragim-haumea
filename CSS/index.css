@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   margin: 20px 0;
-  background-color: #dfd2d2;
+  background-color: #333;
 }
 
 #name {
@@ -10,14 +10,11 @@ body {
   text-align: center;
   margin-top: 50px;  
 }
-
-/*
-section {
-  padding: 1em 2em;
-  margin-bottom: 2em;
+h1, h2, h3, h4, h5, h6 {
+  font-size: 24px; 
+  font-weight: bold; 
+  color: #333; 
 }
-*/
-
 nav {
   position: fixed;
   top: 0;
@@ -28,7 +25,7 @@ nav {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   z-index: 10; 
 }
-/*
+
 nav a {
   text-decoration: none;
   margin-right: 20px;
@@ -39,33 +36,32 @@ nav a {
 nav a:hover {
   color: #999;
 }
-*/
+
 
 #Experience {
   display: flex; 
   flex-wrap: wrap; 
   gap: 20px; 
 }
-/*
-.experience-item {
-  background-color: #fff;
-  padding: 15px;
-  border-radius: 5px;
-  flex: 1 0 30%; 
+#Experience li {
+  background-color: #f0f0f0; 
+  padding: 10px; 
+  margin-bottom: 10px; 
 }
-*/
-*/
-.experience-item h3 {
-  margin-bottom: 5px;
+#Connect a {
+  font-weight: bold; 
+  color: #007bff; 
+  text-decoration: underline; 
 }
-*/
-/*
-.connect-list {
-  display: flex;
-  justify-content: space-between; 
-  align-items: center; 
-}
-*/
+
+#Connect a:hover {
+  color: #0056b3; 
+
+
+
+
+
+
 a {
   color: #333;
   text-decoration: none;
