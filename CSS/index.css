@@ -1,20 +1,23 @@
 body {
   font-family: Arial, sans-serif;
   margin: 20px 0;
-  background-color: #333;
+  background-color: #cef0e5;
+  color: #300;
 }
 
 #name {
   font-size: 3em;
   margin-bottom: 0.6em;
   text-align: center;
-  margin-top: 50px;  
+  margin-top: 50px;
 }
+
 h1, h2, h3, h4, h5, h6 {
-  font-size: 24px; 
-  font-weight: bold; 
-  color: #333; 
+  font-size: 24px;
+  font-weight: bold;
+  color: #303;
 }
+
 nav {
   position: fixed;
   top: 0;
@@ -23,7 +26,7 @@ nav {
   background-color: #fff;
   padding: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  z-index: 10; 
+  z-index: 10;
 }
 
 nav a {
@@ -37,30 +40,43 @@ nav a:hover {
   color: #999;
 }
 
-
 #Experience {
-  display: flex; 
-  flex-wrap: wrap; 
-  gap: 20px; 
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
-#Experience li {
-  background-color: #f0f0f0; 
-  padding: 10px; 
-  margin-bottom: 10px; 
+
+.experience-item {
+  flex: 1 0 calc(50% - 20px);
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
+
+#Connect {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.connect-list {
+  list-style: none;
+  padding: 0;
+}
+
+.connect-list li {
+  flex: 1 0 calc(50% - 20px);
+}
+
 #Connect a {
-  font-weight: bold; 
-  color: #007bff; 
-  text-decoration: underline; 
+  font-weight: bold;
+  color: #007bff;
+  text-decoration: underline;
 }
 
 #Connect a:hover {
-  color: #0056b3; 
-
-
-
-
-
+  color: #0056b3;
+}
 
 a {
   color: #333;
@@ -93,25 +109,5 @@ a:hover {
   .experience-item {
     flex: 1 0 45%;
     margin: 10px;
-  }
-}
-
-@media (min-width: 992px) {
-  /* Desktop Styles */
-
-  .name {
-    font-size: 3.5em;
-  }
-
-  section {
-    padding: 3em;
-  }
-
-  .experience-container {
-    justify-content: space-around;
-  }
-
-  .experience-item {
-    flex: 1 0 30%;
   }
 }
