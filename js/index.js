@@ -84,3 +84,34 @@ messageForm.addEventListener('submit', function(event) {
   // Append newMessage to messageList
   messageList.appendChild(newMessage);
 });
+
+
+const username = "alarlar";
+const apiUrl = `https://api.github.com/users/${alarlar}/repos`;
+
+fetch(apiUrl)
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error("Couldn't fetch data from GitHub");
+    }
+    return response.json();
+  })
+
+  .then((data) => {
+    console.log(data);
+    const repositories = data;
+    console.log(repositories);
+  })
+  .catch((error) => {
+    console.error("Something went wrong:", error)
+  });
+
+  const projectSection = document.getElementById("Projects");
+
+  const projectList = projectSection.querySelector("ul");
+
+  for (let i = 0; i < repositories.length; i++) {
+    const project = document.createElement("li");
+    project.innerText = repositories[i].name;
+    projectList.appendChild(project);
+}
