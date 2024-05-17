@@ -86,10 +86,12 @@ section {
 
 a {
   color: #29a34c;
+  color: #29a34c;
   text-decoration: none;
 }
 
 a:hover {
+  color: #418159;
   color: #418159;
 }
 
