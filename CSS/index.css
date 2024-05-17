@@ -1,8 +1,8 @@
 body {
   font-family: Arial, sans-serif;
   margin: 20px 0;
-  background-color: #cef0e5;
-  color: #300;
+  background-color: #121111;
+  color: rgb(54, 138, 49);
 }
 
 #name {
@@ -12,10 +12,23 @@ body {
   margin-top: 50px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-size: 24px;
+h1 {
+  font-size: 36px; 
   font-weight: bold;
-  color: #303;
+  color: rgb(58, 138, 94);
+}
+
+h2 {
+  font-family: 'Times New Roman';
+  font-size: 30px; 
+  font-weight: bold;
+  color: rgb(30, 137, 14);
+}
+
+h3 {
+  font-size: 24px; 
+  font-weight: bold;
+  color: rgb(64, 33, 64);
 }
 
 nav {
@@ -49,9 +62,12 @@ nav a:hover {
 .experience-item {
   flex: 1 0 calc(50% - 20px);
   padding: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid #70926f;
   border-radius: 5px;
 }
+
+
+
 
 #Connect {
   display: flex;
@@ -79,7 +95,7 @@ nav a:hover {
 }
 
 a {
-  color: #333;
+  color: #84af8e;
   text-decoration: none;
 }
 

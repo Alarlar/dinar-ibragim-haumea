@@ -87,7 +87,7 @@ messageForm.addEventListener('submit', function(event) {
 
 
 const username = "alarlar";
-const apiUrl = `https://api.github.com/users/${alarlar}/repos`;
+const apiUrl = `https://api.github.com/users/${username}/repos`;
 
 fetch(apiUrl)
   .then((response) => {
