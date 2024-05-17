@@ -16,7 +16,12 @@ body {
   font-family: 'Times New Roman', Times, serif;
   font-size: 24px;
   font-weight: bold;
-  color: rgb(31, 231, 124);
+  color: rgb(234, 241, 237);
+}
+h3, h4 {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  color: rgb(234, 241, 237);
 }
 
 nav {
@@ -40,7 +45,7 @@ nav a {
 nav a:hover {
   color: #42977d;
 }
-
+/*
 #Experience {
   display: flex;
   flex-wrap: wrap;
@@ -53,7 +58,7 @@ nav a:hover {
   border: 1px solid #ccc;
   border-radius: 5px;
 }
-
+*/
 #Connect {
   display: flex;
   flex-wrap: wrap;
