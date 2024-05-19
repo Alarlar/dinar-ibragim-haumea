@@ -2,19 +2,19 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   background-color: #242926;
-  color: rgb(9, 239, 94);
+  color: rgb(25, 164, 76);
 }
 
 #name {
   font-size: 3em;
-  margin: 50px 0 20px; /* Adjusted margin */
+  margin: 50px 0 20px; 
   text-align: center;
 }
 
 h2, h3, h4 {
   font-family: 'Times New Roman', Times, serif;
   font-weight: bold;
-  color: rgb(93, 191, 135);
+  color: rgb(7, 161, 74);
 }
 
 h2 {
@@ -23,6 +23,7 @@ h2 {
 
 ul {
   list-style-type: square;
+  color: #1fe8b3;
 }
 
 nav {
@@ -48,14 +49,14 @@ nav a:hover {
 }
 
 section {
-  margin: 10px 0; /* Reduced margin */
-  padding: 10px; /* Reduced padding */
+  margin: 10px 0; 
+  padding: 10px; 
 }
 
 #Connect {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px; /* Reduced gap */
+  gap: 10px; 
 }
 
 .connect-list {
@@ -64,7 +65,7 @@ section {
 }
 
 .connect-list li {
-  flex: 1 0 calc(50% - 10px); /* Adjusted for reduced gap */
+  flex: 1 0 calc(50% - 10px); 
 }
 
 #Connect a {
@@ -91,11 +92,11 @@ a:hover {
 @media (min-width: 768px) {
   #name {
     font-size: 3em;
-    margin-bottom: 20px; /* Reduced margin */
+    margin-bottom: 20px; 
   }
 
   section {
-    padding: 10px; /* Reduced padding */
+    padding: 10px; 
   }
 
   .experience-container {
