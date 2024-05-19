@@ -1,3 +1,5 @@
+
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -11,19 +13,16 @@ body {
   text-align: center;
 }
 
-h2, h3, h4 {
+h2 {
   font-family: 'Times New Roman', Times, serif;
   font-weight: bold;
-  color: rgb(24, 229, 113);
-}
-
-h2 {
-  font-size: 24px;
+  color: #17e55c;
+  text-align: left;
 }
 
 ul {
   list-style-type: square;
-  color: #1fe8b3;
+  color: #24e19c;
 }
 
 /*
@@ -47,7 +46,7 @@ nav a {
   text-decoration: none;
   margin-right: 20px;
   font-weight: bold;
-  color: #0e0f0e;
+  color: #000;
 }
 
 nav a:hover {
@@ -96,7 +95,6 @@ a:hover {
 }
 
 /* Media Queries for Tablets and Desktops */
-
 @media (min-width: 768px) {
   #name {
     font-size: 3em;
@@ -108,8 +106,9 @@ a:hover {
   }
 
   .experience-container {
-    flex-direction: row;
-    justify-content: space-between;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
   }
 
   .experience-item {
