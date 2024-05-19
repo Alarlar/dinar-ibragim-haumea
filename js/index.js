@@ -19,7 +19,7 @@ copyright.innerHTML = `© ${thisYear} Dinar Ibragimov`;
 footer.appendChild(copyright);
 
 // Technical skills as an array
-const skills = ["JavaScript", "HTML", "CSS", "Git"]; 
+const skills = ["JavaScript", "HTML", "CSS", "Git", "C++", "TCP/IP", ]; 
 
 const skillsSection = document.getElementById('Skills');
 

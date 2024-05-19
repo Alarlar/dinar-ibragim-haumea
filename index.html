@@ -1,12 +1,12 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <title>Software Engineer Dinar Ibragim</title>
-    <meta charset="utf-8">  
+    <meta charset="utf-8">
     <meta name="description" content="Dinar Ibragimov, aspiring Software Engineer">
-    <link rel="stylesheet" href="CSS/index.css"> 
+    <link rel="stylesheet" href="CSS/index.css">
 </head>
-<body> 
+<body>
     <nav>
         <a href="#About">About</a>
         <a href="#Experience">Experience</a>
@@ -17,65 +17,79 @@
 
     <h1 id="name">Dinar Ibragimov</h1>
     <section id="About">
-    <h2>About</h2>
+        <h2>About</h2>
         <p>Aspire to become a Software Engineer</p>
     </section>
-    
+
     <section id="Experience">
         <h2>Experience</h2>
         <div class="experience-container">
-        <ul> 
-            <li> IT specialist - "Field Nation" - Nov.’23 - Present - Bay Area, CA  </li>
-            <li> IT specialist - "Salesian Academy" - Aug.’23 - Apr.’24 - San Francisco, CA  </li>
-            <li> Tech - "Siemens" - Aug.’20- 23 Jul  - San Francisco, CA  </li>
-        </ul>
+            <ol>
+                <li><strong>IT specialist</strong></li>
+                <ul>
+                    <li>"Field Nation"</li>
+                    <li>November ’23 - Present</li>
+                    <li>Bay Area, CA</li>
+                </ul>
+                <li><strong>IT specialist</strong></li>
+                <ul>
+                    <li>"Salesian Academy"</li>
+                    <li>Aug. ’23 - Apr. ’24</li>
+                    <li>San Francisco, CA</li>
+                </ul>
+                <li><strong>Tech</strong></li>
+                <ul>
+                    <li>"Siemens"</li>
+                    <li>August ’20 - 23 July</li>
+                    <li>San Francisco, CA</li>
+                </ul>
+            </ol>
         </div>
-        </section>
+    </section>
 
-        <section id="Skills">
-            <h3>Skills</h3>
-            <ul>
-            </ul>
-        </section>
+    <section id="Skills">
+        <h3>Skills</h3>
+        <ul>
+            <!-- Skills list -->
+        </ul>
+    </section>
 
-        <section id="Projects"> 
-            <h3>Projects</h3>
-            <ul> 
-                <li><a href=https://github.com/Alarlar/dinar-ibragim-haumea> Website</a></li>
-            </ul>
-        </section>
-        
-        <section id="Connect">
+    <section id="Projects">
+        <h3>Projects</h3>
+        <ul>
+            <li><a href="https://github.com/Alarlar/dinar-ibragim-haumea">Website</a></li>
+        </ul>
+    </section>
+
+    <section id="Connect">
         <h4>Connect</h4>
         <ul class="connect-list">
             <li><a href="mailto:dinar.ibragim@proton.me">e-mail</a></li>
-            <li><a href="https://github.com/Alarlar"> github</a></li>
+            <li><a href="https://github.com/Alarlar">github</a></li>
         </ul>
-        </section>
+    </section>
 
-        <section>
-            <h4>Leave message</h4>
-            <form name="leave_message">
-                <label for="usersName">Name:</label>
-                <input type="text" name="usersName" required><br>
+    <section id="LeaveMessage">
+        <h4>Leave a Message</h4>
+        <form name="leave_message">
+            <label for="usersName">Name:</label>
+            <input type="text" id="usersName" name="usersName" required>
     
-                <label for="usersEmail">Email:</label>
-                <input type="email" name="usersEmail" required><br>
+            <label for="usersEmail">Email:</label>
+            <input type="email" id="usersEmail" name="usersEmail" required>
     
-                <label for="usersMessage">Message:</label>
-                <textarea name="usersMessage" required></textarea><br>
+            <label for="usersMessage">Message:</label>
+            <textarea id="usersMessage" name="usersMessage" required></textarea>
     
-                <button type="submit">Submit</button>
-            </form>
-        </section>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
 
-        <section id="messages">
-            <h5>Messages</h5>
-            <ul>
-                
-            </ul>
-        </section>
+    <section id="Messages">
+        <h4>Messages</h4>
+        <ul id="messageList"></ul>
+    </section>
 
-        <script src="js/index.js"> </script>
+    <script src="js/index.js"></script>
 </body>
 </html>

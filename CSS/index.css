@@ -1,27 +1,31 @@
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
-  margin: 20px 0;
-  background-color: #242926;
-  color: rgb(31, 224, 102);
+  background-color: #000;
+  color: #15db46;
 }
 
 #name {
   font-size: 3em;
-  margin-bottom: 0.6em;
+  margin: 50px auto 0;
   text-align: center;
-  margin-top: 50px;
 }
 
- h2 {
+h2, h3, h4 {
   font-family: 'Times New Roman', Times, serif;
-  font-size: 24px;
   font-weight: bold;
-  color: rgb(234, 241, 237);
+  color: #17e55c;
+  text-align: left;
 }
-h3, h4 {
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: bold;
-  color: rgb(234, 241, 237);
+
+ul {
+  list-style-type: square;
+  color: #24e19c;
 }
 
 nav {
@@ -39,26 +43,231 @@ nav a {
   text-decoration: none;
   margin-right: 20px;
   font-weight: bold;
-  color: #0e0f0e;
+  color: #000;
 }
 
 nav a:hover {
   color: #42977d;
 }
-/*
-#Experience {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+
+section {
+  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.experience-item {
-  flex: 1 0 calc(50% - 20px);
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
-*/
+
+/* Header */
+#name {
+    font-size: 3em;
+    margin: 50px auto 10px;
+    text-align: center;
+}
+
+h2, h3, h4 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #eee;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Navigation */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(106, 130, 119, 0.1);
+    z-index: 10;
+}
+
+nav a {
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+    color: #000;
+}
+
+nav a:hover {
+    color: #42977d;
+}
+
+/* Main Sections */
+section {
+    margin: 20px auto; /* Adjust vertical space between sections */
+    padding: 20px;
+    background-color: #000;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    overflow: hidden;
+}
+
+ul {
+    list-style-type: square;
+    color: #eee;
+    margin-bottom: 10px;
+}
+
+/* Connect Section */
+#Connect {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.connect-list {
+    list-style: none;
+    padding: 0;
+}
+
+.connect-list li {
+    flex: 1 0 calc(50% - 20px);
+}
+
+#Connect a {
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: underline;
+}
+
+#Connect a:hover {
+    color: #0056b3;
+}
+
+/* Links */
+a {
+    color: #29a34c;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #418159;
+}
+
+/* Leave Message Section */
+section#LeaveMessage {
+    margin: 20px auto; /* Adjust vertical space between sections */
+    padding: 20px;
+    background-color: #000;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    overflow: hidden;
+}
+
+form[name="leave_message"] {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form[name="leave_message"] label {
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+form[name="leave_message"] input[type="text"],
+form[name="leave_message"] input[type="email"],
+form[name="leave_message"] textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+}
+
+form[name="leave_message"] textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+form[name="leave_message"] button[type="submit"] {
+    padding: 10px;
+    background-color: #29a34c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+form[name="leave_message"] button[type="submit"]:hover {
+    background-color: #418159;
+}
+
+#messageList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#messageList li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    color: #000;
+}
+
+#messageList li a {
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: none;
+}
+
+#messageList li a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for Tablets and Desktops */
+@media (min-width: 768px) {
+    /* Tablet Styles */
+    #name {
+        font-size: 3em;
+        margin-bottom: 1em;
+    }
+
+    section {
+        padding: 2em;
+    }
+
+    .experience-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .experience-item {
+        flex: 1 0 calc(50% - 20px);
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    form[name="leave_message"] {
+        max-width: 600px;
+    }
+}
+}
+
 #Connect {
   display: flex;
   flex-wrap: wrap;
@@ -94,26 +303,103 @@ a:hover {
 }
 
 /* Media Queries for Tablets and Desktops */
-
 @media (min-width: 768px) {
   /* Tablet Styles */
-
   .name {
-    font-size: 30em;
-    margin-bottom: 1.5em;
+      font-size: 3em;
+      margin-bottom: 1.5em;
   }
 
   section {
-    padding: 2em;
+      padding: 2em;
   }
 
   .experience-container {
-    flex-direction: row;
-    justify-content: space-between;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
   }
 
   .experience-item {
-    flex: 1 0 45%;
-    margin: 10px;
+      flex: 1 0 calc(50% - 20px);
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
   }
+}
+
+
+section#LeaveMessage {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #000;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form[name="leave_message"] {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+form[name="leave_message"] label {
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+form[name="leave_message"] input[type="text"],
+form[name="leave_message"] input[type="email"],
+form[name="leave_message"] textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #000;
+}
+
+form[name="leave_message"] textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+form[name="leave_message"] button[type="submit"] {
+  padding: 10px;
+  background-color: #29a34c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form[name="leave_message"] button[type="submit"]:hover {
+  background-color: #418159;
+}
+
+#messageList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#messageList li {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  color: #000;
+}
+
+#messageList li a {
+  font-weight: bold;
+  color: #007bff;
+  text-decoration: none;
+}
+
+#messageList li a:hover {
+  text-decoration: underline;
 }
