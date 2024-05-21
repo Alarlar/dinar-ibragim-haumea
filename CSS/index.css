@@ -14,7 +14,7 @@ body {
 h2, h3, h4 {
   font-family: 'Times New Roman', Times, serif;
   font-weight: bold;
-  color: rgb(7, 161, 74);
+  color: rgb(24, 229, 113);
 }
 
 h2 {
@@ -26,6 +26,12 @@ ul {
   color: #1fe8b3;
 }
 
+/*
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+*/
 nav {
   position: fixed;
   top: 0;
@@ -45,7 +51,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #25e0a8;
+  color: #2a856c;
 }
 
 section {
