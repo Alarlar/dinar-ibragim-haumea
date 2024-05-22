@@ -28,12 +28,7 @@ ul {
   color: #1fe8b3;
 }
 
-/*
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-*/
+
 nav {
   position: fixed;
   top: 0;
@@ -57,9 +52,6 @@ nav a:hover {
 }
 
 section {
-  margin: 10px 0; 
-  padding: 10px; 
-}
   margin: 10px 0; 
   padding: 10px; 
 }
