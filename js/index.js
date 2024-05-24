@@ -2,7 +2,7 @@
 const body = document.body;
 
 // Create a new footer element
-const footer = document.createElement('footer');
+const footer = document.createElement("footer");
 
 // Append the footer element as the last child of the body
 body.appendChild(footer);
@@ -11,19 +11,19 @@ body.appendChild(footer);
 const today = new Date();
 const thisYear = today.getFullYear();
 
-// Create copyright text element 
-const copyright = document.createElement('p');
-copyright.innerHTML = `© ${thisYear} Dinar Ibragimov`; 
+// Create copyright text element
+const copyright = document.createElement("p");
+copyright.innerHTML = `© ${thisYear} Dinar Ibragimov`;
 
 // Append the copyright text to the footer
 footer.appendChild(copyright);
 
 // Technical skills as an array
-const skills = ["JavaScript", "HTML", "CSS", "Git"]; 
+const skills = ["JavaScript", "HTML", "CSS", "Git", "C++", "TCP/IP"];
 
-const skillsSection = document.getElementById('Skills');
+const skillsSection = document.getElementById("Skills");
 
-const skillsList = skillsSection.querySelector('ul');
+const skillsList = skillsSection.querySelector("ul");
 
 for (const skill of skills) {
   const skillItem = document.createElement('li');
@@ -101,17 +101,16 @@ fetch(apiUrl)
     console.log(data);
     const repositories = data;
     console.log(repositories);
+    const projectSection = document.getElementById("Projects");
+
+    const projectList = projectSection.querySelector("ul");
+
+    for (let i = 0; i < repositories.length; i++) {
+      const project = document.createElement("li");
+      project.innerText = repositories[i].name;
+      projectList.appendChild(project);
+    }
   })
   .catch((error) => {
-    console.error("Something went wrong:", error)
+    console.error("Something went wrong:", error);
   });
-
-  const projectSection = document.getElementById("Projects");
-
-  const projectList = projectSection.querySelector("ul");
-
-  for (let i = 0; i < repositories.length; i++) {
-    const project = document.createElement("li");
-    project.innerText = repositories[i].name;
-    projectList.appendChild(project);
-}
