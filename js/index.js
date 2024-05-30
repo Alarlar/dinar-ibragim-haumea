@@ -100,9 +100,9 @@ document.addEventListener('DOMContentLoaded', function () {
             return response.json();
         })
         .then((data) => {
-            console.log(data);
+            //console.log(data);
             const repositories = data;
-            console.log(repositories);
+            //console.log(repositories);
             const projectSection = document.getElementById("Projects");
             const projectList = projectSection.querySelector("ul");
 

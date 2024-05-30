@@ -1,8 +1,8 @@
 body {
   font-family: Arial, sans-serif;
   margin: 20px 0;
-  background-color: #121111;
-  color: rgb(54, 138, 49);
+  background-color: #0909081e;
+  color: rgb(20, 21, 20);
 }
 
 #name {
@@ -14,7 +14,7 @@ body {
 h2 {
   font-family: 'Times New Roman', Times, serif;
   font-weight: bold;
-  color: rgb(24, 229, 113);
+  color: rgb(14, 15, 14);
 }
 
 h2 {
@@ -23,19 +23,17 @@ h2 {
 
 ul {
   list-style-type: square;
-  color: #1fe8b3;
+  color: #0e0f0e;
 }
-
 
 nav {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #fff;
+  background-color: #171515;
   padding: 10px;
   box-shadow: 0 2px 5px rgba(106, 130, 119, 0.1);
-  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
   z-index: 10;
 }
 
@@ -43,7 +41,7 @@ nav a {
   text-decoration: none;
   margin-right: 20px;
   font-weight: bold;
-  color: #0e0f0e;
+  color: #f5f3f3;
 }
 
 nav a:hover {
@@ -55,36 +53,12 @@ section {
   padding: 10px; 
 }
 
-
-
-
-#Connect {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px; 
-}
-
-.connect-list {
-  list-style: none;
-  padding: 0;
-}
-
-.connect-list li {
-  flex: 1 0 calc(50% - 10px); 
-}
-
-#Connect a {
-  font-weight: bold;
-  color: #007bff;
-  text-decoration: underline;
-}
-
 #Connect a:hover {
   color: #0056b3;
 }
 
 a {
-  color: #29a34c;
+  color: #101211;
   text-decoration: none;
 }
 
@@ -108,6 +82,7 @@ a:hover {
   }
 
   .experience-container {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
